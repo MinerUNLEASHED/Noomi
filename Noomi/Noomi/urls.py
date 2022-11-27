@@ -34,3 +34,9 @@ urlpatterns = [
     # url(r'^dashboard/$',dashboard_views.dashboard,name='dashboard'),
     url(r'^set/$',sets_views.create_set,name='create_set'),
 ]
+
+
+
+from django.conf import settings
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
