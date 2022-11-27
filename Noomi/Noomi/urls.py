@@ -32,5 +32,5 @@ urlpatterns = [
     url(r'^about/$',ddm_views.about,name='about'),
     url(r'^help/$',ddm_views.help,name='help'),
     # url(r'^dashboard/$',dashboard_views.dashboard,name='dashboard'),
-    url(r'^create-set/$',sets_views.create_set,name='create_set'),
+    url(r'^set/$',sets_views.create_set,name='create_set'),
 ]
