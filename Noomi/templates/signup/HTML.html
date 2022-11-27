@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+<!-- <link rel="stylesheet" href="{% static "homepage/CSS.css" %}"> -->
+<link rel="stylesheet" href="{% static "signup/CSS.css" %}">
+<link rel="stylesheet" href="{% static "dropdownmenu/ABOUT.css" %}">
+    <div class="container">
+        <div class="jumbotron">
+            {% if registered %}
+                <h1>Thank you for registering!</h1>
+
+            
+            {% else %}
+                {% if not user.if_authenticated %}
+                    <h1>Register Here</h1>
+                    <!-- <h3>Fill Out This Form:</h3> -->
+
+                    <form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ user_form.as_p }}
+                        <input type="submit" value="Register">
+                    </form>
+                {% endif %}
+
+
+
+            {% endif %}
+        </div>
+    </div>
+
+
+{% endblock%}

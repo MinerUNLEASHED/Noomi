@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "base/base.html" %}
+{% load staticfiles %}
+    {% block body_block %}
+        <link rel="stylesheet" href="{% static "dropdownmenu/ABOUT.css" %}">
+        <link rel="stylesheet" href="{% static "dashboard/CSS.css" %}">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Dashboard</h1>
+                <h3>Your Sets</h3>
+
+                
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="..." alt="...">
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima laboriosam vel, omnis veritatis voluptatibus praesentium necessitatibus in, nostrum repellendus corporis ipsa dolor, ratione esse tenetur sint ipsum! Excepturi, ea.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    {% endblock%}

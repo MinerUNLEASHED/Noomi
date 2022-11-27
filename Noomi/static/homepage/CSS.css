@@ -1,0 +1,41 @@
+#image-next-to-jumbotron {
+    width: auto;
+    height: 1000px;
+    /* margin-top: 0px;
+    margin-left: 0px;
+    border-top: 0px;
+    border-left: 0px; */
+}
+
+.jumbotron {
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: #190028;
+    color: #8100cc;
+}
+
+body {
+    background-image: url("homepage-image-next-to-jumbotron.jpg");
+    height: 200px;
+    width: auto;
+    background-size: 1500px;
+    margin-top: 100px;
+}
+
+/* body {
+    background-image: url("homepage-image-2.jpg");
+    height: 200px;
+    width: auto;
+    background-size: 1500px;
+    margin-top: 100px;
+} */
+
+.btn.btn-primary.btn-lg {
+    background-color: #3A015C;
+    border: 0px;
+}
+
+/* #interesting_text {
+    color: rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-opa
+} */
